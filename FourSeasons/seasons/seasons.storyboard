@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jfy-8R-cgR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Season View Controller-->
+        <scene sceneID="1tf-BA-cde">
+            <objects>
+                <viewController id="Jfy-8R-cgR" customClass="SeasonViewController" customModule="FourSeasons" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vOR-y8-iM1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="four season" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWv-Pn-v4B">
+                                <rect key="frame" x="162" y="99" width="90" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urS-oY-80X">
+                                <rect key="frame" x="61" y="320" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Summer"/>
+                                <connections>
+                                    <action selector="SummerTapped:" destination="Jfy-8R-cgR" eventType="touchUpInside" id="cW1-Ep-TJ9"/>
+                                    <action selector="summerButton:" destination="sKi-DB-YkH" eventType="touchUpInside" id="nCc-AL-MqC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNJ-xs-Fsr">
+                                <rect key="frame" x="63" y="451" width="54" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Autumn"/>
+                                <connections>
+                                    <action selector="AutumnTapped:" destination="Jfy-8R-cgR" eventType="touchUpInside" id="Vgq-ls-GNX"/>
+                                    <action selector="autumnButton:" destination="sKi-DB-YkH" eventType="touchUpInside" id="eTn-Sk-4r8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jkg-Ds-mkq">
+                                <rect key="frame" x="67" y="585" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Winter"/>
+                                <connections>
+                                    <action selector="WinterTapped:" destination="Jfy-8R-cgR" eventType="touchUpInside" id="5Yp-Pc-iL6"/>
+                                    <action selector="winterButton:" destination="sKi-DB-YkH" eventType="touchUpInside" id="mun-Sb-hEe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfZ-gw-3oR">
+                                <rect key="frame" x="67" y="206" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Spring"/>
+                                <connections>
+                                    <action selector="SpringTapped:" destination="Jfy-8R-cgR" eventType="touchUpInside" id="Yxx-k5-qBG"/>
+                                    <action selector="springButton:" destination="sKi-DB-YkH" eventType="touchUpInside" id="0KN-Y1-wf5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xcM-NQ-aIC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sIR-XQ-7g7"/>
+                    <connections>
+                        <outlet property="AutumnButton" destination="GNJ-xs-Fsr" id="Tlx-pJ-IzD"/>
+                        <outlet property="SpringButton" destination="sfZ-gw-3oR" id="xYb-xY-ENu"/>
+                        <outlet property="SummerButton" destination="urS-oY-80X" id="qGY-fU-FqW"/>
+                        <outlet property="WinterButton" destination="Jkg-Ds-mkq" id="OMJ-Cr-8y3"/>
+                        <segue destination="Te5-s4-yeU" kind="show" identifier="goToSeasonDetail" id="tWq-xW-nWN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ea-G2-TSe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="sKi-DB-YkH" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1118.840579710145" y="81.696428571428569"/>
+        </scene>
+        <!--Season Detail View Controller-->
+        <scene sceneID="wWa-ag-VCQ">
+            <objects>
+                <viewController id="Te5-s4-yeU" customClass="SeasonDetailViewController" customModule="FourSeasons" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fae-NI-Cj2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Season" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ha-8m-Nyd">
+                                <rect key="frame" x="186" y="264" width="57" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZjM-gI-nrN">
+                                <rect key="frame" x="186" y="361" width="44" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6ft-Ob-RqX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LAP-V9-TTE"/>
+                    <connections>
+                        <outlet property="descLabel" destination="ZjM-gI-nrN" id="nLg-ks-CxU"/>
+                        <outlet property="seasonLabel" destination="6ha-8m-Nyd" id="2m9-2h-BHm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cFu-sd-Pit" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1919" y="82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

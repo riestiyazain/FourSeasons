@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9189C69E26414EBE00974ABA /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9189C69D26414EBE00974ABA /* OnboardingViewController.swift */; };
+		9189C6A626416D8D00974ABA /* onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9189C6A526416D8D00974ABA /* onboarding.storyboard */; };
+		91D936EA263DB7C000BCE57F /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D936E9263DB7C000BCE57F /* Season.swift */; };
 		91EEE38F263D4F350097D452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EEE38E263D4F350097D452 /* AppDelegate.swift */; };
 		91EEE391263D4F350097D452 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EEE390263D4F350097D452 /* SceneDelegate.swift */; };
 		91EEE393263D4F350097D452 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EEE392263D4F350097D452 /* ViewController.swift */; };
 		91EEE396263D4F350097D452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EEE394263D4F350097D452 /* Main.storyboard */; };
 		91EEE398263D4F3B0097D452 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91EEE397263D4F3B0097D452 /* Assets.xcassets */; };
 		91EEE39B263D4F3B0097D452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EEE399263D4F3B0097D452 /* LaunchScreen.storyboard */; };
+		91EEE3AA263D563A0097D452 /* seasons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EEE3A9263D563A0097D452 /* seasons.storyboard */; };
+		91EEE3AE263D57A60097D452 /* SeasonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EEE3AD263D57A60097D452 /* SeasonViewController.swift */; };
+		91EEE3B1263DAA8F0097D452 /* SeasonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EEE3B0263DAA8F0097D452 /* SeasonDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9189C69D26414EBE00974ABA /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		9189C6A526416D8D00974ABA /* onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = onboarding.storyboard; sourceTree = "<group>"; };
+		91D936E9263DB7C000BCE57F /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		91EEE38B263D4F350097D452 /* FourSeasons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourSeasons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EEE38E263D4F350097D452 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91EEE390263D4F350097D452 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,9 @@
 		91EEE397263D4F3B0097D452 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91EEE39A263D4F3B0097D452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91EEE39C263D4F3B0097D452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91EEE3A9263D563A0097D452 /* seasons.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = seasons.storyboard; sourceTree = "<group>"; };
+		91EEE3AD263D57A60097D452 /* SeasonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonViewController.swift; sourceTree = "<group>"; };
+		91EEE3B0263DAA8F0097D452 /* SeasonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,8 @@
 		91EEE38D263D4F350097D452 /* FourSeasons */ = {
 			isa = PBXGroup;
 			children = (
+				91EEE3A5263D54CE0097D452 /* seasons */,
+				91EEE3A4263D54C20097D452 /* onboarding */,
 				91EEE38E263D4F350097D452 /* AppDelegate.swift */,
 				91EEE390263D4F350097D452 /* SceneDelegate.swift */,
 				91EEE392263D4F350097D452 /* ViewController.swift */,
@@ -65,6 +79,26 @@
 				91EEE39C263D4F3B0097D452 /* Info.plist */,
 			);
 			path = FourSeasons;
+			sourceTree = "<group>";
+		};
+		91EEE3A4263D54C20097D452 /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				9189C69D26414EBE00974ABA /* OnboardingViewController.swift */,
+				9189C6A526416D8D00974ABA /* onboarding.storyboard */,
+			);
+			path = onboarding;
+			sourceTree = "<group>";
+		};
+		91EEE3A5263D54CE0097D452 /* seasons */ = {
+			isa = PBXGroup;
+			children = (
+				91EEE3A9263D563A0097D452 /* seasons.storyboard */,
+				91D936E9263DB7C000BCE57F /* Season.swift */,
+				91EEE3AD263D57A60097D452 /* SeasonViewController.swift */,
+				91EEE3B0263DAA8F0097D452 /* SeasonDetailViewController.swift */,
+			);
+			path = seasons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +161,8 @@
 				91EEE39B263D4F3B0097D452 /* LaunchScreen.storyboard in Resources */,
 				91EEE398263D4F3B0097D452 /* Assets.xcassets in Resources */,
 				91EEE396263D4F350097D452 /* Main.storyboard in Resources */,
+				9189C6A626416D8D00974ABA /* onboarding.storyboard in Resources */,
+				91EEE3AA263D563A0097D452 /* seasons.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				91EEE393263D4F350097D452 /* ViewController.swift in Sources */,
+				91EEE3AE263D57A60097D452 /* SeasonViewController.swift in Sources */,
 				91EEE38F263D4F350097D452 /* AppDelegate.swift in Sources */,
+				91EEE3B1263DAA8F0097D452 /* SeasonDetailViewController.swift in Sources */,
+				9189C69E26414EBE00974ABA /* OnboardingViewController.swift in Sources */,
+				91D936EA263DB7C000BCE57F /* Season.swift in Sources */,
 				91EEE391263D4F350097D452 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AppleDeveloperAcademyBinus.FourSeasons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AppleDeveloperAcademyBinus.FourSeasons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
