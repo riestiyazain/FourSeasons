@@ -17,14 +17,40 @@ class SeasonViewController: UIViewController {
     var selectedSeason: String?
     var selectedSeasonDesc: String?
     var currentIndex: Int = 0
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         generateSeason()
+//        SpringButton.setBackgroundImage(UIImage(named: "SpringIcon"), for: .normal)
+//        SummerButton.setBackgroundImage(UIImage(named: "SummerIcon"), for: .normal)
+//        AutumnButton.setBackgroundImage(UIImage(named: "AutumnIcon"), for: .normal)
+//        WinterButton.setBackgroundImage(UIImage(named: "WinterIcon"), for: .normal)
+        SpringButton.layer.cornerRadius = 14
+        SummerButton.layer.cornerRadius = 14
+        AutumnButton.layer.cornerRadius = 14
+        WinterButton.layer.cornerRadius = 14
+        SummerButton.imageView?.contentMode = .scaleAspectFit
+                
         
 
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //hide nav bar on self
+        navigationController?.isNavigationBarHidden = true
+        //hide back button
+//            navigationItem.hidesBackButton = true
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        //show nav bar on other views
+        navigationController?.isNavigationBarHidden = false
+    }
+    
+
 
     @IBAction func SpringTapped(_ sender: UIButton) {
         currentIndex = 0
@@ -55,7 +81,7 @@ class SeasonViewController: UIViewController {
         guard let newVC = segue.destination as? SeasonDetailViewController else { return }
         newVC.currentName = seasonArray[currentIndex].Name
         newVC.currentDesc = seasonArray[currentIndex].Description
-        
+        newVC.currentTime = seasonArray[currentIndex].Time
     }
     func setSeason() {
         

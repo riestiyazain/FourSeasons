@@ -31,17 +31,34 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Onboarding" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3F-y3-5P1">
-                                <rect key="frame" x="163" y="153" width="90" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover Japan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWs-aQ-6Zf">
+                                <rect key="frame" x="121.5" y="142" width="171" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9CR-zj-31U">
-                                <rect key="frame" x="169" y="787" width="78" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Get started"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taking you to the adventure of Japan’s four season" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2J0-9i-Hqf">
+                                <rect key="frame" x="43" y="185" width="328" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.92941176469999998" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9CR-zj-31U">
+                                <rect key="frame" x="130" y="780" width="154" height="42"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.71175331080000004" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="QAI-hJ-SUo"/>
+                                    <constraint firstAttribute="height" constant="42" id="SLh-t4-k2l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Get started">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="rxM-jN-RQP" kind="show" id="kWW-5a-BrU"/>
                                 </connections>
@@ -49,11 +66,21 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Op9-Qg-3AN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9CR-zj-31U" firstAttribute="leading" secondItem="Op9-Qg-3AN" secondAttribute="leading" constant="130" id="1OV-WF-yhu"/>
+                            <constraint firstItem="2J0-9i-Hqf" firstAttribute="leading" secondItem="Op9-Qg-3AN" secondAttribute="leading" constant="43" id="4af-24-1Mo"/>
+                            <constraint firstItem="SWs-aQ-6Zf" firstAttribute="centerX" secondItem="h9V-Lf-9I7" secondAttribute="centerX" id="7Rn-cW-vBU"/>
+                            <constraint firstItem="9CR-zj-31U" firstAttribute="top" secondItem="2J0-9i-Hqf" secondAttribute="bottom" constant="556.5" id="HEo-44-F5c"/>
+                            <constraint firstItem="Op9-Qg-3AN" firstAttribute="trailing" secondItem="2J0-9i-Hqf" secondAttribute="trailing" constant="43" id="Ktw-l4-11k"/>
+                            <constraint firstItem="SWs-aQ-6Zf" firstAttribute="top" secondItem="Op9-Qg-3AN" secondAttribute="top" constant="54" id="hdf-2X-KfO"/>
+                            <constraint firstItem="Op9-Qg-3AN" firstAttribute="trailing" secondItem="9CR-zj-31U" secondAttribute="trailing" constant="130" id="rxL-Sp-uhX"/>
+                            <constraint firstItem="2J0-9i-Hqf" firstAttribute="top" secondItem="SWs-aQ-6Zf" secondAttribute="bottom" constant="13" id="wNx-cz-i9N"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="USE-jJ-HtA"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-41" y="94"/>
+            <point key="canvasLocation" x="-42.028985507246382" y="93.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6MN-oS-PLr">
