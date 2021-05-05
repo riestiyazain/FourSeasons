@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9189C69E26414EBE00974ABA /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9189C69D26414EBE00974ABA /* OnboardingViewController.swift */; };
 		9189C6A626416D8D00974ABA /* onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9189C6A526416D8D00974ABA /* onboarding.storyboard */; };
+		9189C6A92641D80800974ABA /* HolidayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9189C6A82641D80800974ABA /* HolidayViewController.swift */; };
+		91C7F5232642538B009C46FC /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C7F5222642538B009C46FC /* Holiday.swift */; };
 		91D936EA263DB7C000BCE57F /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D936E9263DB7C000BCE57F /* Season.swift */; };
 		91EEE38F263D4F350097D452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EEE38E263D4F350097D452 /* AppDelegate.swift */; };
 		91EEE391263D4F350097D452 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EEE390263D4F350097D452 /* SceneDelegate.swift */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		9189C69D26414EBE00974ABA /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		9189C6A526416D8D00974ABA /* onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = onboarding.storyboard; sourceTree = "<group>"; };
+		9189C6A82641D80800974ABA /* HolidayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayViewController.swift; sourceTree = "<group>"; };
+		91C7F5222642538B009C46FC /* Holiday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = "<group>"; };
 		91D936E9263DB7C000BCE57F /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		91EEE38B263D4F350097D452 /* FourSeasons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourSeasons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EEE38E263D4F350097D452 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,8 +99,10 @@
 			children = (
 				91EEE3A9263D563A0097D452 /* seasons.storyboard */,
 				91D936E9263DB7C000BCE57F /* Season.swift */,
+				91C7F5222642538B009C46FC /* Holiday.swift */,
 				91EEE3AD263D57A60097D452 /* SeasonViewController.swift */,
 				91EEE3B0263DAA8F0097D452 /* SeasonDetailViewController.swift */,
+				9189C6A82641D80800974ABA /* HolidayViewController.swift */,
 			);
 			path = seasons;
 			sourceTree = "<group>";
@@ -176,10 +182,12 @@
 				91EEE393263D4F350097D452 /* ViewController.swift in Sources */,
 				91EEE3AE263D57A60097D452 /* SeasonViewController.swift in Sources */,
 				91EEE38F263D4F350097D452 /* AppDelegate.swift in Sources */,
+				91C7F5232642538B009C46FC /* Holiday.swift in Sources */,
 				91EEE3B1263DAA8F0097D452 /* SeasonDetailViewController.swift in Sources */,
 				9189C69E26414EBE00974ABA /* OnboardingViewController.swift in Sources */,
 				91D936EA263DB7C000BCE57F /* Season.swift in Sources */,
 				91EEE391263D4F350097D452 /* SceneDelegate.swift in Sources */,
+				9189C6A92641D80800974ABA /* HolidayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

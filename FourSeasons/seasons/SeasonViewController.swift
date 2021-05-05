@@ -22,10 +22,6 @@ class SeasonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         generateSeason()
-//        SpringButton.setBackgroundImage(UIImage(named: "SpringIcon"), for: .normal)
-//        SummerButton.setBackgroundImage(UIImage(named: "SummerIcon"), for: .normal)
-//        AutumnButton.setBackgroundImage(UIImage(named: "AutumnIcon"), for: .normal)
-//        WinterButton.setBackgroundImage(UIImage(named: "WinterIcon"), for: .normal)
         SpringButton.layer.cornerRadius = 14
         SummerButton.layer.cornerRadius = 14
         AutumnButton.layer.cornerRadius = 14
@@ -70,10 +66,10 @@ class SeasonViewController: UIViewController {
     }
     
     func generateSeason() {
-        seasonArray.append(Season(name: "Spring", description: "Most famous for the Sakura peak season", time: "March - May", type: .Spring))
-        seasonArray.append(Season(name: "Summer", description: "Beach, anyone?", time: "June - August", type: .Summer))
-        seasonArray.append(Season(name: "Autumn", description: "Romantic season is here", time: "September - November", type: .Autumn))
-        seasonArray.append(Season(name: "Winter", description: "Onsen and skiing", time: "December - February", type: .Winter))
+        seasonArray.append(Season(name: "Spring", description: "Most famous for the Sakura peak season", time: "March - May", type: .Spring, weatherAlert: ["Cool temperature, 4 - 18 C"]))
+        seasonArray.append(Season(name: "Summer", description: "Beach, anyone?", time: "June - August", type: .Summer, weatherAlert: ["Warm to hot temperature, 21 to 32 C","Kick off Typhoon Season in June", "High rain intensity on June"]))
+        seasonArray.append(Season(name: "Autumn", description: "Romantic season is here", time: "September - November", type: .Autumn, weatherAlert: ["Mild temperature, 17 - 18 C", "Winter kickoff on November, 6 - 12 C"]))
+        seasonArray.append(Season(name: "Winter", description: "Onsen and skiing", time: "December - February", type: .Winter, weatherAlert: ["Coldest temperature, ranging from 6 - 7 C, lowest at -24 C usually in December"]))
 
     }
     
@@ -82,6 +78,7 @@ class SeasonViewController: UIViewController {
         newVC.currentName = seasonArray[currentIndex].Name
         newVC.currentDesc = seasonArray[currentIndex].Description
         newVC.currentTime = seasonArray[currentIndex].Time
+        newVC.currentWeather = seasonArray[currentIndex].weather_alert
     }
     func setSeason() {
         

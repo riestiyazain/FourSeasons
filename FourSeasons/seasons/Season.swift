@@ -19,11 +19,13 @@ class Season {
     var Description = ""
     var Time = ""
     var season_type: SeasonType
+    var weather_alert = [""]
     
-    init(name: String, description: String, time: String, type: SeasonType) {
+    init(name: String, description: String, time: String, type: SeasonType, weatherAlert: [String]) {
         Name =  name
         Description = description
         Time = time
         season_type = type
+        weather_alert = weatherAlert
     }
 }

@@ -11,18 +11,17 @@
         <!--seasons-->
         <scene sceneID="N9W-TM-4gk">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jvH-eG-wOD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="seasons" id="rxM-jN-RQP" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="aKG-3l-1Bo"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jvH-eG-wOD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="510.14492753623193" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Onboarding View Controller-->
         <scene sceneID="YSe-wd-Ibi">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FC2-Qg-616" sceneMemberID="firstResponder"/>
-                <viewController id="CqX-EW-2sB" customClass="ViewController" customModule="FourSeasons" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CqX-EW-2sB" customClass="OnboardingViewController" customModule="FourSeasons" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h9V-Lf-9I7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,6 +78,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="USE-jJ-HtA"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FC2-Qg-616" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-42.028985507246382" y="93.75"/>
         </scene>
@@ -102,7 +102,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="onboarding" width="2982" height="3976"/>
+        <image name="onboarding" width="640" height="853"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
