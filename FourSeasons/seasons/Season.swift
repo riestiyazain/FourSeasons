@@ -20,6 +20,7 @@ class Season {
     var Time = ""
     var season_type: SeasonType
     var weather_alert = [""]
+    var weather_image = [""]
     
     init(name: String, description: String, time: String, type: SeasonType, weatherAlert: [String]) {
         Name =  name
